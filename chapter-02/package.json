@@ -1,0 +1,11 @@
+{
+  "name": "ignitereact",
+  "version": "1.0.0",
+  "description": "It is chapter 2 of Namaste React Live.",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Prashant Singh Gour",
+  "license": "ISC"
+}
