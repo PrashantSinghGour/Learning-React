@@ -26,5 +26,28 @@ const container = React.createElement('div', {
     )
   ]);
 
+const container2 = (
+  <div>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+  </div>
+);
+
+
+
+const HeadersComponent = () => {
+  return (
+    <div>
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+    </div>
+  )
+}
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(container);
+// root.render(container); // from createElement
+// root.render(container2); // from JSX Element
+root.render(<HeadersComponent />); // from functional component
