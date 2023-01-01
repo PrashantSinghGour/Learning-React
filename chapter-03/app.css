@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header{
+  background-color: dodgerblue;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-icon {
+  height: 2rem;
+}
+
+.user-icon path {
+  fill: white;
+}
+
+
+.search input{
+  width: 35rem;
+  height: 2rem;
+  border-radius: 5px;
+  border-style: hidden;
+  font-size: 1rem;
+}
+
+.search input::placeholder {
+  color: grey;
+}
