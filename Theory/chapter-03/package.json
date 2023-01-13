@@ -1,0 +1,25 @@
+{
+  "name": "ignitereact",
+  "version": "1.0.0",
+  "description": "It is chapter 2 of Namaste React Live.",
+  "scripts": {
+    "test": "jest",
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
+  },
+  "author": "Prashant Singh Gour",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserList": [
+    "last 2 versions",
+    "not dead",
+    "> 0.2%"
+  ]
+}
