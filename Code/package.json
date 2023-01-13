@@ -4,7 +4,7 @@
   "description": "It is chapter 2 of Namaste React Live.",
   "scripts": {
     "test": "jest",
-    "start": "npx parcel index.html",
+    "start": "npx parcel index.html -p 4200",
     "build": "npx parcel build index.html"
   },
   "author": "Prashant Singh Gour",
