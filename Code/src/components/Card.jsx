@@ -6,8 +6,8 @@ const Card = (props) => {
   return (
     <div className="card">
       <img src={`${IMG_CDN_URL}/${cloudinaryImageId}`} alt="hotel_img"></img>
-      <h3>{name}</h3>
-      <p>{cuisines.join(', ')}</p>
+      <p className="name">{name}</p>
+      <p className="cuisine">{cuisines?.join(', ')}</p>
       <p>{avgRating} stars</p>
     </div>
   )
