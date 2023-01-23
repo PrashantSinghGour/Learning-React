@@ -4,7 +4,7 @@
   "description": "It is chapter 2 of Namaste React Live.",
   "scripts": {
     "test": "jest",
-    "start": "npx parcel index.html -p 4200",
+    "start": "npx parcel index.html -p 4300",
     "build": "npx parcel build index.html"
   },
   "author": "Prashant Singh Gour",
@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.7.0"
   },
   "browserList": [
     "last 2 versions",

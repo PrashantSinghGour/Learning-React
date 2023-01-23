@@ -28,6 +28,7 @@ padding: 10px;
 
 .logo {
   height: 100px;
+  padding: 0.5rem
 }
 
 .card {
@@ -112,4 +113,8 @@ background-color: #eef0f5;
   100%{
     background-color: white;
   }
+}
+
+.restaurant {
+  margin-top: 1rem;
 }

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import restaurants from "../../restaurants";
 import { API_URL } from "../constants";
 import Card from "./Card";
@@ -25,19 +26,13 @@ const Body = () => {
   const [filteredRestaurants, setFilteredRestaurants] = useState([])
 
   useEffect(() => {
-    const l = console.log;
-    console.log('render', searchInput);
-    const data = fetchRestaurants();
-    l(data);
-
-    l(restaurants);
+    fetchRestaurants();
   }, []);
 
   const fetchRestaurants = async () => {
     try {
       let data = await fetch(API_URL).then((res) => res);
       const json = await data.json();
-      console.log(json);
       setRestaurants(json?.data?.cards[2]?.data?.data?.cards);
       setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     } catch (e) {
@@ -58,7 +53,7 @@ const Body = () => {
 
       {<div className="body">
         {
-          !filteredRestaurants?.length ? Array(20).fill('').map((item) => <Shimmer />) : filteredRestaurants?.map(restaurant => <Card {...restaurant.data} key={restaurant.data.id} />)
+          !filteredRestaurants?.length ? Array(20).fill('').map((item) => <Shimmer />) : filteredRestaurants?.map(restaurant => <Link to={`/restaurant/${restaurant.data.id}`}><Card {...restaurant.data} key={restaurant.data.id} /></Link>)
         }
       </div>}
     </>
