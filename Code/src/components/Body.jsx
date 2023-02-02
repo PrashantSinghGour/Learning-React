@@ -27,6 +27,10 @@ const Body = () => {
 
   useEffect(() => {
     fetchRestaurants();
+
+    return () => {
+      //this function is called when component destroyed.
+    }
   }, []);
 
   const fetchRestaurants = async () => {
@@ -42,7 +46,7 @@ const Body = () => {
 
   return (
     <>
-      <div className="search-container">
+      <div className="search-container" key={'search-area'}>
         <input type="text" placeholder="search" className="search-input" value={searchInput} onChange={(e) => {
           setSearchInput(e.target.value);
         }} />
@@ -51,9 +55,9 @@ const Body = () => {
         }}>Search</button>
       </div>
 
-      {<div className="body">
+      {<div className="body" key={'body-area'}>
         {
-          !filteredRestaurants?.length ? Array(20).fill('').map((item) => <Shimmer />) : filteredRestaurants?.map(restaurant => <Link to={`/restaurant/${restaurant.data.id}`}><Card {...restaurant.data} key={restaurant.data.id} /></Link>)
+          !filteredRestaurants?.length ? Array(20).fill('').map((item, index) => <Shimmer key={`${index}`} />) : filteredRestaurants?.map(restaurant => <Link to={`/restaurant/${restaurant.data.id}`} key={restaurant.data.id}><Card {...restaurant.data} /></Link>)
         }
       </div>}
     </>
