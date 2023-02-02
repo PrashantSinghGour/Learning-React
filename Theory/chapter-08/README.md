@@ -97,7 +97,8 @@ In `unmounting` stage, when component is destroyed after use is navigated to oth
   - `componentWillUnmount` get called, where we can clear the resources getting used in our component such as subscription to socket, setIntervals etc.
 
 
-<iframe style="width:100vw;height: 80vh;" src="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/" title="W3Schools Free Online Web Tutorials"></iframe>
+
+![React Lifecycle Diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/ogimage.png)
 
 <br/>
 <br/>
