@@ -1,5 +1,5 @@
 ## What is Emmet?
-Emmet (formerly known as Zen Code) is basically a code editor plug-in which enables the developer for high speed coding and edting of HTML, XML and other structured code format via content assist.
+Emmet (formerly known as Zen Code) is basically a code editor plug-in which enables the developer for high speed coding and editing of HTML, XML and other structured code format via content assist.
 
 for example `div#page>div.logo+ul#navigation>li*5>a` can be written for,
 
